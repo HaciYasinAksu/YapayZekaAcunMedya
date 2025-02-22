@@ -194,7 +194,12 @@ class Human:
     def __init__(self,name):
         self.name = name
         print("Constructor çalıştı")
-    #Yapıcı metot, bir sınıfın örneğini oluşturduğunuzda otomatik olarak çalışan bir metottur. Yapıcı metot, __init__() adıyla tanımlanır. Bu metot, sınıfın özelliklerini başlatmak için kullanılır.
+    #Yapıcı metot, bir sınıfın örneğini oluşturduğunuzda otomatik olarak çalışan bir metottur. Yapıcı metot, __init__() adıyla tanımlanır. Bu metot, sınıfın özelliklerini başlatmak için kullanılır.i
+
+    def  __str__(self) -> str:
+        return self.name
+    #__str__() metodu, bir nesnenin dize temsilini döndürmek için kullanılır. Bu metot, bir nesnenin print() fonksiyonuyla yazdırıldığında çağrılır. Bu metot, nesnenin dize temsilini döndürmelidir.
+        pass
     def talk(self,sentence):
         print(f"Talking: {sentence}")
     def walk(self,sentence):
@@ -211,3 +216,9 @@ human1.talk("Merhaba")
 human1.fonk1()
 human1.name = "Ali"
 human1.fonk1()
+print(human1) # __str__ metodu çalışır. 
+#Built-in fonksiyonlar içinde konfigürasyonlar yapılabilir. 
+
+#Modüller, Python'da kodunuzu organize etmek ve tekrar kullanılabilirliği artırmak için kullanılan bir yapıdır. Modüller, bir veya daha fazla fonksiyon, sınıf veya değişken içerebilir. Python'da modüller .py uzantılı dosyalarda tanımlanır. Modüller, başka bir Python dosyasında import anahtar kelimesiyle içe aktarılabilir.
+#Paketler, modüllerin bir araya getirilmesiyle oluşturulan bir yapıdır. Paketler, bir veya daha fazla modül içerebilir. Python'da paketler, bir dizin içinde __init__.py dosyası oluşturularak tanımlanır. Paketler, başka bir Python dosyasında import anahtar kelimesiyle içe aktarılabilir.
+

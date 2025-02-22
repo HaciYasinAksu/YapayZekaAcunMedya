@@ -76,3 +76,4 @@ print("Koşul dışı")
 """Python'da girinti boşluklarla yapılır . """
 """Python'da girinti miktarı 4 boşluktur . """  
 """Python'da girinti miktarı aynı olmalıdır . """
+"""Hocam son kurulumu tam yapamadım . """
